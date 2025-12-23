@@ -1,0 +1,221 @@
+
+ <!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Маникюрный салон — Главная</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+<body>
+
+<header class="header">
+  <video autoplay muted loop playsinline>
+    <source src="video.mp4" type="video/mp4">
+  </video>
+
+  <nav class="nav">
+    <div class="logo">ManiStudio</div>
+    <button class="menu-btn">☰</button>
+    <div class="menu-overlay"></div>
+    <ul class="menu">
+      <li><a href="#services">Услуги</a></li>
+      <li><a href="#benefits">Преимущества</a></li>
+      <li><a href="#news">Статьи</a></li>
+      <li><button id="openModal">Записаться</button></li>
+
+      <li class="faq-title">Частые вопросы</li>
+
+<li class="faq-item">
+  <button class="faq-question">Сколько держится маникюр?</button>
+  <div class="faq-answer">В среднем 2–3 недели при правильном уходе.</div>
+</li>
+
+<li class="faq-item">
+  <button class="faq-question">Можно ли снимать гель самостоятельно?</button>
+  <div class="faq-answer">Лучше не стоит — это повреждает ногтевую пластину.</div>
+</li>
+
+<li class="faq-item">
+  <button class="faq-question">Как часто нужно делать маникюр?</button>
+  <div class="faq-answer">Раз в 2–3 недели для поддержания аккуратного вида.</div>
+</li>
+
+    </ul>
+  </nav>
+
+  <div class="menu-overlay"></div>
+
+  <div class="hero-video-btn">
+    <button id="heroBtn" class="hero-btn">Записаться</button>
+  </div>
+</header>
+
+  <section id="works" class="works">
+  <h2>Примеры работ</h2>
+
+  <div class="gallery">
+    <button class="gallery-prev">‹</button>
+
+    <div class="gallery-track">
+      <div class="gallery-slide"><img src="img/10.jpg"></div>
+      <div class="gallery-slide"><img src="img/1.jpg"></div>
+      <div class="gallery-slide"><img src="img/7.jpg"></div>
+      <div class="gallery-slide"><img src="img/3.jpg"></div>
+      <div class="gallery-slide"><img src="img/2.jpg"></div>
+      <div class="gallery-slide"><img src="img/4.jpg"></div>
+    </div>
+
+    <button class="gallery-next">›</button>
+  </div>
+
+  <div class="works-btn-wrapper">
+    <a href="portfolio.html" class="works-btn">Смотреть все работы</a>
+  </div>
+</section>
+
+
+<section id="services" class="services">
+  <h2>Наши услуги</h2>
+  <div class="services-grid">
+    <div class="card">Классический маникюр</div>
+    <div class="card">Гель-лак</div>
+    <div class="card">SPA-уход для рук</div>
+    <div class="card">Аппаратный маникюр</div>
+    <div class="card">Дизайн ногтей</div>
+    <div class="card">Коррекция ногтей</div>
+  </div>
+</section>
+
+ <!-- ===== PRICES =====  -->
+<section id="prices" class="prices">
+  <h2>Прайс-лист</h2>
+
+  <div class="prices-grid">
+    <div class="price-item">
+      <span>Классический маникюр</span>
+      <strong>1500 ₽</strong>
+    </div>
+    <div class="price-item">
+      <span>Аппаратный маникюр</span>
+      <strong>1800 ₽</strong>
+    </div>
+    <div class="price-item">
+      <span>Маникюр + гель-лак</span>
+      <strong>3000 ₽</strong>
+    </div>
+    <div class="price-item">
+      <span>SPA-уход для рук</span>
+      <strong>2200 ₽</strong>
+    </div>
+  </div>
+
+  <button class="price-btn" id="openModal2">Записаться</button>
+</section>
+
+<section id="benefits" class="benefits">
+  <h2>Почему выбирают нас</h2>
+  <ul>
+    <li>Профессиональные мастера и стерильность</li>
+    <li>Современное оборудование и материалы</li>
+    <li>Индивидуальный подход к каждому клиенту</li>
+  </ul>
+</section>
+
+<section id="news" class="news">
+  <h2>Полезные статьи</h2>
+
+  <div class="news-grid">
+    <a
+      href="https://max4u.ru/articles/manikyur-v-zimnee-vremya-7-pravil-uhoda-za-rukami-v-holoda/?srsltid=AfmBOooGMeKxM3Kg7Zewlixf-9jfWHiVjYuFQqVYIUVwXG7ywtDtoMpF"
+      class="news-card"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <h3>Уход за ногтями зимой</h3>
+      <p>Как сохранить здоровье и красоту ногтей в холодный сезон...</p>
+      <span class="read-more">Читать →</span>
+    </a>
+
+    <a
+      href="https://4hands.ru/blog/stilnyi-manicur-2025-trendy-i-novinki/"
+      class="news-card"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <h3>Маникюрные тренды 2025</h3>
+      <p>Какие дизайны в моде в этом году, советы мастеров...</p>
+      <span class="read-more">Читать →</span>
+    </a>
+
+    <a
+      href="https://www.kp.ru/woman/krasota/ukreplenie-nogtej-v-domashnikh-usloviyakh/"
+      class="news-card"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <h3>Как укрепить ногти дома</h3>
+      <p>Лучшие методы укрепления натуральных ногтей...</p>
+      <span class="read-more">Читать →</span>
+    </a>
+  </div>
+</section>
+
+ <!-- ===== CONTACT FORM (BOTTOM) =====  -->
+<section id="contact" class="contact">
+  <h2>Связь с нами</h2>
+
+  <form id="contactForm" class="contact-form">
+    <input
+      type="text"
+      name="name"
+      placeholder="ФИО"
+      required
+    >
+
+    <input
+      type="email"
+      name="email"
+      placeholder="E-mail"
+      required
+    >
+
+    <input
+      type="tel"
+      name="phone"
+      placeholder="Телефон"
+      required
+    >
+
+    <textarea
+      name="message"
+      placeholder="Ваше сообщение"
+      required
+    ></textarea>
+
+    <label class="checkbox">
+      <input type="checkbox" required>
+      Согласен с политикой обработки персональных данных
+    </label>
+
+    <button type="submit" class="submit-btn">
+      Отправить
+    </button>
+  </form>
+</section>
+
+
+<div id="modal-root"></div>
+
+<script src="js/menu.js"></script>
+<script src="js/form.js"></script>
+<script src="js/modal-react.js"></script>
+<script src="js/gallery.js"></script>
+
+</body>
+</html>
