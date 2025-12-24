@@ -24,7 +24,7 @@ phoneInput.addEventListener('input', () => {
     e.preventDefault();
 
 
-    await fetch('https://formcarry.com/s/rKL4x1Gr5x1', {
+    await fetch('https://formcarry.com/s/lX6qDXfaAjd', {
       method: 'POST',
       body: new FormData(form)
     });
@@ -33,3 +33,4 @@ phoneInput.addEventListener('input', () => {
     alert('Заявка отправлена');
   });
 }
+
