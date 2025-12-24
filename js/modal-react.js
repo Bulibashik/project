@@ -26,7 +26,7 @@ async function submit(evn){
   const data = new FormData();
   for (let key in form) data.append(key, form[key]);
 
-  await fetch('https://formcarry.com/s/rKL4x1Gr5x1', {
+  await fetch('https://formcarry.com/s/lX6qDXfaAjd', {
     method: 'POST',
     body: data
   });
@@ -69,3 +69,4 @@ const priceBtn = document.getElementById('openModal2');
 if (openModalBtn) openModalBtn.onclick = openModal;
 if (heroBtn) heroBtn.onclick = openModal;
 if (priceBtn) priceBtn.onclick = openModal;
+
